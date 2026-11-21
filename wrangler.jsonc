@@ -1,0 +1,29 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cau-thang",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": { "enabled": true },
+  // Thay database_id bằng id thật từ `npx wrangler d1 create cau-thang-db` trước khi deploy.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cau-thang-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Ảnh (WebP/JPEG đã nén ở trình duyệt). Key: img/<id>/<lg|sm>.
+  // Thay id bằng id thật từ `npx wrangler kv namespace create MEDIA` trước khi deploy.
+  "kv_namespaces": [
+    {
+      "binding": "MEDIA",
+      "id": "00000000000000000000000000000000"
+    }
+  ]
+}

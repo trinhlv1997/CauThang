@@ -1,0 +1,18 @@
+/* Tailwind chỉ cho trang quản trị: quét class trong app/admin và components/admin,
+   để không ảnh hưởng CSS của website (site.css). */
+@import "tailwindcss" source(none);
+@source "./";
+@source "../../components/admin";
+
+@theme {
+  --color-brand: #1f4e79;
+  --color-brand-dark: #143650;
+  --color-brand-50: #eaf1f8;
+  --color-accent: #e8a33d;
+}
+
+body {
+  background: var(--color-slate-100);
+  color: var(--color-slate-900);
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}

@@ -9,6 +9,12 @@
     "binding": "ASSETS"
   },
   "observability": { "enabled": true },
+  // Tên miền chính (zone cauthang29.com trên Cloudflare). workers.dev vẫn bật song song.
+  "routes": [
+    { "pattern": "cauthang29.com", "custom_domain": true },
+    { "pattern": "www.cauthang29.com", "custom_domain": true }
+  ],
+  "workers_dev": true,
   "d1_databases": [
     {
       "binding": "DB",

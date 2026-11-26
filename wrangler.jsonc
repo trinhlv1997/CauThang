@@ -9,21 +9,19 @@
     "binding": "ASSETS"
   },
   "observability": { "enabled": true },
-  // Thay database_id bằng id thật từ `npx wrangler d1 create cau-thang-db` trước khi deploy.
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "cau-thang-db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "b34de232-0d58-4ed4-bfa2-e2976f320e44",
       "migrations_dir": "migrations"
     }
   ],
   // Ảnh (WebP/JPEG đã nén ở trình duyệt). Key: img/<id>/<lg|sm>.
-  // Thay id bằng id thật từ `npx wrangler kv namespace create MEDIA` trước khi deploy.
   "kv_namespaces": [
     {
       "binding": "MEDIA",
-      "id": "00000000000000000000000000000000"
+      "id": "3391d9f8a6ac48c2bc122897df9d2bc9"
     }
   ]
 }

@@ -1,7 +1,7 @@
 -- Nội dung mẫu (lấy từ trang demo). Sửa/xoá trong /admin.
 INSERT INTO settings (key, value) VALUES
-  ('brandMain', 'Nhà Thang'),
-  ('brandSub', 'STUDIO'),
+  ('brandMain', 'Cầu Thang 29'),
+  ('brandSub', ''),
   ('phone', '0900 000 000'),
   ('zalo', '0900000000'),
   ('address', '123 Đoài Phương, Hà Nội'),

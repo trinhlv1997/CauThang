@@ -89,8 +89,8 @@ export const SETTING_FIELDS: { key: keyof Settings; label: string; hint?: string
 ];
 
 export const DEFAULT_SETTINGS: Settings = {
-  brandMain: "Nhà Thang",
-  brandSub: "STUDIO",
+  brandMain: "Cầu Thang 29",
+  brandSub: "",
   phone: "",
   zalo: "",
   address: "",

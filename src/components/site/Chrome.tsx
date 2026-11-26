@@ -62,7 +62,7 @@ export function Header({ settings }: { settings: Settings }) {
             </span>
             <span>
               {settings.brandMain}
-              <small>{settings.brandSub}</small>
+              {settings.brandSub && <small>{settings.brandSub}</small>}
             </span>
           </Link>
           <NavMenu links={NAV}>
